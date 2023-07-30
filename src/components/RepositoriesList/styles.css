@@ -1,0 +1,51 @@
+.repositoriesList{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+}
+.listElementRepo{
+    background: rgb(31, 31, 46);
+    padding: 1em;
+    text-align: left;
+}
+.listElementRepo h3{
+    font-size: 0.6em;
+    font-family: Gotham-Bold;
+}
+.listElementRepo p{
+    font-size: 0.5em;
+    margin: 0;
+}
+.listElementRepo div{
+    margin-top: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.listElementRepo div svg{
+    width: 1em;
+    height: auto;
+    padding: 0.3em;
+    fill: rgb(248, 147, 29);
+    transition: 0.3s all;
+}
+.listElementRepo div svg:hover{
+    fill: #fff;
+}
+.listElementRepo sub{
+    font-size: 0.4em;
+}
+.listElementRepo span{
+    color: rgb(248, 147, 29);
+}
+@media (max-width: 900px){
+    .repositoriesList{
+        grid-template-columns: repeat(2, 1fr);
+    } 
+}
+@media (max-width: 560px){
+    .repositoriesList{
+        grid-template-columns: repeat(1, 1fr);
+    } 
+}

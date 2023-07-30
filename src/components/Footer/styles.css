@@ -1,0 +1,12 @@
+.sectionFooter{
+    background: rgb(22, 22, 35);
+    height: 4em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sectionFooter sub{
+    font-size: 0.6em;
+    color: rgba(248, 147, 29, 0.6);
+}

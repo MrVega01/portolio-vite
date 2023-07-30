@@ -1,0 +1,33 @@
+.skillsProfile{
+    display: flex;
+}
+.skillsPhoto{
+    width: 25%;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skillsPhoto span{
+    font-size: 0.8em;
+}
+.skillsPhoto img{
+    height: 1em;
+}
+.skillsBar{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skillsBar div{
+    height: 0.5em;
+    width: 90%;
+    background: linear-gradient(#ffffff, #a5a5a5);
+    border-radius: 50vw;
+}
+.skillsBar div div{
+    height: 100%;
+    background: linear-gradient(to left,#ef3e36, #f8931d);
+    border-radius: 50vw 0 0 50vw;
+}

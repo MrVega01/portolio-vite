@@ -1,0 +1,132 @@
+/*HOME PARENT*/
+.sectionHome1{
+    width: 80vw;
+}
+.sectionHome2{
+    background: rgb(22, 22, 35);
+    width: 80%;
+    padding: 0 10%;
+}
+/*PRESENTATION*/
+.sectionPresentation{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    min-height: 100vh;
+    width: 100%;
+}
+.sectionPresentation h1{
+    font-family: Gotham-Bold;
+    margin: 0.2em 0;
+}
+.sectionPresentation h1:nth-child(2){
+    font-size: 6vw;
+}
+.sectionPresentation h1:nth-child(3){
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.8);
+}
+/*ABOUT ME*/
+.sectionAboutMe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+.sectionAboutMe h1{
+    font-family: Gotham-Bold;
+    font-size: 2em;
+}
+.sectionAboutMe p{
+    font-size: 0.7em;
+}
+/*SKILLS*/
+.sectionSkills h1{
+    font-family: Gotham-Bold;
+    font-size: 2em;
+}
+.divSkills{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1vh;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+}
+/*EXPERIENCE*/
+.sectionExperience{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20vh 0;
+}
+.sectionExperience h1{
+    font-family: Gotham-Bold;
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+/*Section projects*/
+.sectionProjects{
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2em;
+}
+.sectionProjects h1{
+    font-family: Gotham-Bold;
+    font-size: 2em;
+    margin-bottom: 0.3em;
+}
+.repositoriesLink{
+    text-decoration: none;
+    margin-bottom: 5em;
+    font-size: .6em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.3s;
+}
+.repositoriesLink:hover{
+    color: rgb(255, 255, 255);
+}
+/*CONTACT*/
+.sectionContact{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sectionContact h1{
+    font-family: Gotham-Bold;
+    font-size: 2em;
+    margin-bottom: 0.3em;
+}
+.sectionContact sub{
+    font-size: 0.6em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.sectionContact div{
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+}
+.svgLinkedin, .svgGithub{
+    fill: rgb(248, 147, 29);
+    transition: fill 0.3s;
+    width: 3em;
+    height: 3em;
+    margin: 0 0.5em;
+}
+.svgGithub{
+    width: 3.5em;
+    height: 3.5em;
+}
+.svgGithub:hover{
+    fill: #fff;
+}
+.svgLinkedin:hover{
+    fill: #0b67c3;
+}
