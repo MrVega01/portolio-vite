@@ -1,8 +1,12 @@
 .worldCanvas{
+    background: rgb(22, 22, 35);
     z-index: -5;
     width: 100vw;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
+}
+.worldCanvas > canvas {
+    opacity: 0.4;
 }
