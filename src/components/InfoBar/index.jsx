@@ -1,34 +1,33 @@
+import InfoBarButton from '../InfoBarButton'
+import List from '../List'
 import './styles.css'
 import { useState } from 'react'
 
 export default function InfoBar ({ data }) {
-  const [title, setTitle] = useState(`${data[0].occupation} in ${data[0].company}`)
-  const [time, setTime] = useState(data[0].time)
-  const [description, setDescription] = useState(data[0].description)
+  const [info, setInfo] = useState(data[0])
+
+  const { occupation, company, time, description, responsibilities, accomplishments } = info
 
   return (
     <div className='infoBar'>
       <div>
         {
-                    data.map((d, i) => {
-                      return (
-                        <button
-                          key={i}
-                          onClick={() => {
-                            setTitle(`${d.occupation} in ${d.company}`)
-                            setTime(d.time)
-                            setDescription(d.description)
-                          }}
-                        >{d.company}
-                        </button>
-                      )
-                    })
-                }
+          data.map((data) => <InfoBarButton key={data.company} data={data} handler={setInfo} />)
+        }
       </div>
       <div>
-        <h1>{title}</h1>
+        <h1>{`${occupation} in ${company}`}</h1>
         <sub>{time}</sub>
+
         <p>{description}</p>
+        <h2>Responsibilities</h2>
+        <List
+          elements={responsibilities}
+        />
+        <h2>Key accomplishments</h2>
+        <List
+          elements={accomplishments}
+        />
       </div>
     </div>
   )

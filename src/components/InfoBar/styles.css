@@ -8,26 +8,17 @@
     flex-direction: column;
     width: 25%;
 }
-.infoBar div:nth-child(1) button{
-    background: transparent;
-    border: none;
-    border-left: 2px solid rgba(255, 255, 255, 0.2);
-    color: rgba(255, 255, 255, 0.8);
-    font-family: Gotham;
-    font-size: .8em;
-    padding: .4em 0;
-    transition: 0.4s all;
-}
-.infoBar div:nth-child(1) button:hover{
-    background: rgba(248, 147, 29, 0.2);
-    color: rgb(248, 147, 29);
-}
 .infoBar div:nth-child(2){
     text-align: start;
     width: 72%;
 }
 .infoBar div:nth-child(2) h1{
     font-size: 1em;
+    font-family: Gotham-Bold;
+    margin: 0;
+}
+.infoBar div:nth-child(2) h2{
+    font-size: 0.7em;
     font-family: Gotham-Bold;
     margin: 0;
 }
