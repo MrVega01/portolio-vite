@@ -1,0 +1,11 @@
+.tippyImage{
+  transition: transform 0.2s;
+}
+.tippyImage svg{
+  width: 80px;
+  height: 80px;
+  margin: 24px 0;
+}
+.tippyImage:hover{
+  transform: scale(1.5);
+}

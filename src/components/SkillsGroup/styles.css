@@ -1,0 +1,9 @@
+.skillsGroup{
+  column-count: 4;
+  column-gap: 24px;
+}
+@media (max-width: 520px){
+  .skillsGroup{
+    column-count: 2;
+  } 
+}
