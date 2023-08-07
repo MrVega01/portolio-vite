@@ -1,19 +1,7 @@
 import './styles.css'
-import SkillsProfile from '../../components/SkillsProfile'
 import InfoBar from '../../components/InfoBar'
 import RepositoriesList from '../../components/RepositoriesList'
-// IMPORTING PHOTOS
-import reactPhoto from '../../img/react.svg'
-import nodejsPhoto from '../../img/nodejs.svg'
-import jsPhoto from '../../img/javascript.svg'
-import htmlPhoto from '../../img/html.png'
-import cssPhoto from '../../img/css3.svg'
-import bootstrapPhoto from '../../img/bootstrap.svg'
-import mongodbPhoto from '../../img/mongodb.svg'
-import mysqlPhoto from '../../img/mysql.svg'
-import phpPhoto from '../../img/php.svg'
-import gitPhoto from '../../img/git.svg'
-import expressPhoto from '../../img/expressjs.png'
+import SkillsGroup from '../../components/SkillsGroup'
 
 export default function Home () {
   return (
@@ -57,63 +45,7 @@ export default function Home () {
 
           <section className='sectionSkills'>
             <h1>Technical skills</h1>
-            <div className='divSkills'>
-              <SkillsProfile
-                text='React'
-                photo={reactPhoto}
-                percent='60%'
-              />
-              <SkillsProfile
-                text='Node.js'
-                photo={nodejsPhoto}
-                percent='50%'
-              />
-              <SkillsProfile
-                text='Express.js'
-                photo={expressPhoto}
-                percent='50%'
-              />
-              <SkillsProfile
-                text='Javascript'
-                photo={jsPhoto}
-                percent='75%'
-              />
-              <SkillsProfile
-                text='MongoDB'
-                photo={mongodbPhoto}
-                percent='45%'
-              />
-              <SkillsProfile
-                text='HTML5'
-                photo={htmlPhoto}
-                percent='70%'
-              />
-              <SkillsProfile
-                text='CSS3'
-                photo={cssPhoto}
-                percent='80%'
-              />
-              <SkillsProfile
-                text='Bootstrap'
-                photo={bootstrapPhoto}
-                percent='60%'
-              />
-              <SkillsProfile
-                text='MySQL'
-                photo={mysqlPhoto}
-                percent='30%'
-              />
-              <SkillsProfile
-                text='PHP'
-                photo={phpPhoto}
-                percent='20%'
-              />
-              <SkillsProfile
-                text='Git'
-                photo={gitPhoto}
-                percent='80%'
-              />
-            </div>
+            <SkillsGroup />
           </section>
           <section className='sectionProjects'>
             <h1>My projects!</h1>
