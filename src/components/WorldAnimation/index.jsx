@@ -7,13 +7,15 @@ export default function WorldAnimation () {
   const worldDiv = useRef()
 
   const scene = new THREE.Scene()
-  scene.background = new THREE.Color('rgb(22, 22, 35)')
+  // scene.background = new THREE.Color(null)
   document.addEventListener('mousemove', onMouseMove, false)
   const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
   let mouseX
   let mouseY
 
-  const renderer = new THREE.WebGLRenderer()
+  const renderer = new THREE.WebGLRenderer({
+    alpha: true
+  })
   renderer.setSize(window.innerWidth, window.innerHeight)
 
   window.addEventListener('resize', function () {
@@ -51,7 +53,7 @@ export default function WorldAnimation () {
   camera.position.z = 400
 
   const animate = function () {
-    requestAnimationFrame(animate)
+    window.requestAnimationFrame(animate)
     renderer.render(scene, camera)
   }
   let myTween

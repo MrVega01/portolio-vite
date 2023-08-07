@@ -1,11 +1,10 @@
 /*HOME PARENT*/
 .sectionMain{
-    width: 80vw;
+    width: 100%;
 }
 .sectionSecondary{
-    background: rgb(22, 22, 35);
+    background: linear-gradient(to top, rgb(22, 22, 35) 99%, transparent) ;
     width: 80%;
-    box-shadow: 0px -40px 40px rgb(22, 22, 35);
     padding: 0 10%;
 }
 /*PRESENTATION*/
@@ -16,7 +15,7 @@
     justify-content: center;
     text-align: left;
     min-height: 100vh;
-    width: 100%;
+    padding: 0 10vw;
 }
 .sectionPresentation h1{
     font-family: Gotham-Bold;
@@ -44,18 +43,12 @@
     font-size: 2em;
 }
 /*SKILLS*/
+.sectionSkills{
+    min-height: 100vh;
+}
 .sectionSkills h1{
     font-family: Gotham-Bold;
     font-size: 2em;
-}
-.divSkills{
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 1vh;
-    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(15px);
 }
 /*Section projects*/
 .sectionProjects{
