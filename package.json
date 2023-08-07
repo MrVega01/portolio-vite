@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tippyjs/react": "^4.2.6",
     "gsap": "3.10.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -27,6 +28,9 @@
     "vite": "^4.3.2"
   },
   "eslintConfig": {
-    "extends": ["standard", "standard-jsx"]
+    "extends": [
+      "standard",
+      "standard-jsx"
+    ]
   }
 }
