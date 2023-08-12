@@ -17,7 +17,7 @@ import {
   PlaywrightIcon,
   ServerlessIcon,
   TypeScriptIcon
-} from '../../img/Icons'
+} from '../Icons'
 
 export default function SkillsGroup () {
   return (
