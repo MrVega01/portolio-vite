@@ -1,10 +1,10 @@
 import './styles.css'
 import ProjectCard from '../ProjectCard'
 // Images
-import misTesorosAppImg from '../../img/mis-tesoros-app.png'
-import passwordGeneratorImg from '../../img/hacktoberfest.png'
-import ecommerceImg from '../../img/react-ecommerce.png'
-import movieSearcherImg from '../../img/react-movie-searcher.png'
+import misTesorosAppImg from '../../assets/projects/mis-tesoros-app.png'
+import passwordGeneratorImg from '../../assets/projects/hacktoberfest.png'
+import ecommerceImg from '../../assets/projects/react-ecommerce.png'
+import movieSearcherImg from '../../assets/projects/react-movie-searcher.png'
 
 export default function ProjectList () {
   return (
