@@ -1,0 +1,11 @@
+.hoverIcon svg{
+  filter: brightness(0) invert(1);
+  width: 32px;
+  height: 32px;
+  transition: filter 0.2s, transform 0.2s;
+}
+.hoverIcon svg:hover{
+  filter: none;
+  opacity: 1;
+  transform: scale(1.1);
+}

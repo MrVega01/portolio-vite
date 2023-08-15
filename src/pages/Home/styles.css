@@ -51,19 +51,18 @@
 .sectionSkills{
     min-height: 100vh;
 }
-.sectionSkills h1{
+.sectionSkills h2{
     font-family: Gotham-Bold;
     font-size: 2em;
 }
 /*Section projects*/
 .sectionProjects{
-    min-height: 80vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     padding-bottom: 2em;
 }
-.sectionProjects h1{
+.sectionProjects h2{
     font-family: Gotham-Bold;
     font-size: 2em;
     margin-bottom: 0.3em;
@@ -72,7 +71,8 @@
     text-decoration: none;
     margin-bottom: 5em;
     font-size: .6em;
-    color: rgba(255, 255, 255, 0.6);
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.8);
     transition: color 0.3s;
 }
 .repositoriesLink:hover{
@@ -86,7 +86,7 @@
     align-items: center;
     justify-content: center;
 }
-.sectionContact h1{
+.sectionContact h2{
     font-family: Gotham-Bold;
     font-size: 2em;
     margin-bottom: 0.3em;
