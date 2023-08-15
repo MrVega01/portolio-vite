@@ -38,3 +38,10 @@ export function WavesSeparator ({ colors = ['#fff', '#f0f', '#ff0', '#1ff'], bac
     </svg>
   )
 }
+export function CurvedSeparator ({ color, background }) {
+  return (
+    <div className='curvedSeparator' style={{ background }}>
+      <div style={{ background: color }} />
+    </div>
+  )
+}
