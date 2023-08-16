@@ -48,3 +48,8 @@
 .projectCard footer a > svg:hover{
   opacity: 1;
 }
+@media(max-width: 620px){
+  .projectCard{
+    flex-direction: column-reverse;
+  }
+}
