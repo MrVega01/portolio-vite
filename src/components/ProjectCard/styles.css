@@ -52,4 +52,7 @@
   .projectCard{
     flex-direction: column-reverse;
   }
+  .projectCard aside img{
+    width: 70vw;
+  }
 }
