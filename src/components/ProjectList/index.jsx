@@ -13,7 +13,7 @@ export default function ProjectList () {
         title='Mis Tesoros APP'
         img={misTesorosAppImg}
         description='Mobile application that allows adding and obtaining persistent products between devices. The main objective of this project is to manage the difference in rates between US dollars and Venezuelan bolivars, converting base prices in dollars to bolivars, depending on the valuation of the day.'
-        skills={['React', 'Node.js', 'Express.js', 'MySQL']}
+        skills={['React', 'Expo', 'Node.js', 'Express.js', 'MySQL']}
         repository='https://github.com/MrVega01/mis-tesoros-app'
       />
       <ProjectCard

@@ -11,12 +11,12 @@ import {
   MongoDBIcon,
   MySQLIcon,
   NodeJSIcon,
-  PHPIcon,
   AWSIcon,
   JestIcon,
   PlaywrightIcon,
   ServerlessIcon,
-  TypeScriptIcon
+  TypeScriptIcon,
+  ExpoLightIcon
 } from '../Icons'
 
 export default function SkillsGroup () {
@@ -34,20 +34,20 @@ export default function SkillsGroup () {
         <JavaScriptIcon />
       </TippyImage>
 
-      <TippyImage hoverText='React / React Native'>
-        <ReactIcon />
+      <TippyImage hoverText='Git'>
+        <GitIcon />
       </TippyImage>
 
       <TippyImage hoverText='Bootstrap'>
         <BootstrapIcon />
       </TippyImage>
 
-      <TippyImage hoverText='Express.js'>
-        <ExpressIcon />
+      <TippyImage hoverText='React / React Native'>
+        <ReactIcon />
       </TippyImage>
 
-      <TippyImage hoverText='Git'>
-        <GitIcon />
+      <TippyImage hoverText='Express.js'>
+        <ExpressIcon />
       </TippyImage>
 
       <TippyImage hoverText='MongoDB'>
@@ -62,8 +62,8 @@ export default function SkillsGroup () {
         <NodeJSIcon />
       </TippyImage>
 
-      <TippyImage hoverText='PHP'>
-        <PHPIcon />
+      <TippyImage hoverText='Expo'>
+        <ExpoLightIcon />
       </TippyImage>
 
       <TippyImage hoverText='Amazon Web Services'>

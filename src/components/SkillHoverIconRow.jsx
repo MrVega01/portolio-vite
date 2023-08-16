@@ -1,5 +1,17 @@
 import HoverIcon from './HoverIcon'
-import { AWSIcon, BootstrapIcon, ExpressIcon, JestIcon, MongoDBIcon, MySQLIcon, NodeJSIcon, PlaywrightIcon, ReactIcon, TypeScriptIcon } from './Icons'
+import {
+  AWSIcon,
+  BootstrapIcon,
+  ExpoDarkIcon,
+  ExpressIcon,
+  JestIcon,
+  MongoDBIcon,
+  MySQLIcon,
+  NodeJSIcon,
+  PlaywrightIcon,
+  ReactIcon,
+  TypeScriptIcon
+} from './Icons'
 
 export default function SkillHoverIconRow ({ skills }) {
   const skillIcons = skills.map(skill => {
@@ -33,6 +45,9 @@ export default function SkillHoverIconRow ({ skills }) {
       }
       case 'Bootstrap': {
         return { component: <BootstrapIcon />, name: skill }
+      }
+      case 'Expo': {
+        return { component: <ExpoDarkIcon />, name: skill }
       }
       default: return null
     }
