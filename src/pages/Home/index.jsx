@@ -11,7 +11,7 @@ export default function Home () {
         <sub>Hello, my name is</sub>
         <h1>José Ignacio Vega</h1>
         <p><b>Full Stack Developer</b> +1 year of experience in a Canadian company.
-          <br /><br />In my own experience, I am a developer with the preparation to face challenges, to be always updated with the technologies of the moment and in other occasions, to take leadership in decisions. Fast learning career path, responsibility, adaptability and knowledge in agile methodologies such as SCRUM.
+          <br /><br />Developer with the preparation to face challenges, to be always updated with the technologies of the moment and in other occasions, to take leadership in decisions. Fast learning career path, responsibility, adaptability and knowledge in agile methodologies such as SCRUM.
         </p>
       </section>
 
@@ -69,7 +69,7 @@ export default function Home () {
       <div className='sectionQuaternary'>
         <section className='sectionContact'>
           <h2>Contact me!</h2>
-          <sub>Send me a message in LinkedIn, I am very active there. You can see too my GitHub profile and know me better 👾</sub>
+          <sub>Send me a message on LinkedIn, I'm very active there. You can also check out my GitHub profile and get to know me better 👾</sub>
           <div>
             <a target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/jos%C3%A9-vega-89135421a/'>
               <svg className='svgLinkedin' xmlns='http://www.w3.org/2000/svg' width='1024px' height='1024px' viewBox='0 0 24 24'><path d='M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z' /></svg>
