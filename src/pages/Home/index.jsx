@@ -3,8 +3,15 @@ import InfoBar from '../../components/InfoBar'
 import SkillsGroup from '../../components/SkillsGroup'
 import { CurvedSeparator, WavesSeparator } from '../../components/Separators/Separators'
 import ProjectList from '../../components/ProjectList'
+import { useEffect } from 'react'
+import { useParams } from 'react-router-dom'
 
 export default function Home () {
+  const { path } = useParams()
+
+  useEffect(() => {
+    console.log(path)
+  }, [])
   return (
     <main className='sectionMain'>
       <section className='sectionPresentation'>
