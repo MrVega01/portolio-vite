@@ -3,27 +3,27 @@ import InfoBar from '../../components/InfoBar'
 import SkillsGroup from '../../components/SkillsGroup'
 import { CurvedSeparator, WavesSeparator } from '../../components/Separators/Separators'
 import ProjectList from '../../components/ProjectList'
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import { useParams } from 'react-router-dom'
 
 export default function Home () {
   const { path } = useParams()
-
+  const refs = useRef({})
   useEffect(() => {
-    console.log(path)
-  }, [])
+    path && refs.current[path]?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }, [path])
   return (
     <main className='sectionMain'>
       <section className='sectionPresentation'>
-        <sub>Hello, my name is</sub>
+        <sub>Hello, I'm</sub>
         <h1>José Ignacio Vega</h1>
-        <p><b>Full Stack Developer</b> +1 year of experience in a Canadian company.
-          <br /><br />Developer with the preparation to face challenges, to be always updated with the technologies of the moment and in other occasions, to take leadership in decisions. Fast learning career path, responsibility, adaptability and knowledge in agile methodologies such as SCRUM.
+        <p><b>Full Stack Developer</b> with 2 year of experience.
+          <br /><br />Professional with the preparation to face challenges, be up to date and take the leadership in decisions. Fast learning career path, responsibility, adaptability and knowledge in agile methodologies such as SCRUM. With experience in Backend, Frontend, Mobile and Cloud development.
         </p>
       </section>
 
       <div className='sectionSecondary'>
-        <section className='sectionExperience'>
+        <section className='sectionExperience' ref={el => { refs.current.experience = el }}>
           <h2>Where I've work?</h2>
           <InfoBar
             data={[
@@ -50,7 +50,7 @@ export default function Home () {
           />
         </section>
 
-        <section className='sectionSkills'>
+        <section className='sectionSkills' ref={el => { refs.current.skills = el }}>
           <h2>Technical skills</h2>
           <SkillsGroup />
         </section>
@@ -66,7 +66,7 @@ export default function Home () {
         ]}
       />
       <div className='sectionTertiary'>
-        <section className='sectionProjects'>
+        <section className='sectionProjects' ref={el => { refs.current.projects = el }}>
           <h2>My projects!</h2>
           <a className='repositoriesLink' target='_blank' rel='noopener noreferrer' href='https://github.com/MrVega01?tab=repositories'>Check all my repositories</a>
           <ProjectList />
@@ -74,7 +74,7 @@ export default function Home () {
       </div>
       <CurvedSeparator background='#f8931d' color='#161623' />
       <div className='sectionQuaternary'>
-        <section className='sectionContact'>
+        <section className='sectionContact' ref={el => { refs.current.contact = el }}>
           <h2>Contact me!</h2>
           <sub>Send me a message on LinkedIn, I'm very active there. You can also check out my GitHub profile and get to know me better 👾</sub>
           <div>

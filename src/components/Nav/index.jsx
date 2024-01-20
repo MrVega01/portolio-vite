@@ -1,6 +1,6 @@
-import { NavLink } from 'react-router-dom'
 import { MainIcon } from '../Icons'
 import './styles.css'
+import Tabs from '../Tabs'
 
 export default function Nav () {
   return (
@@ -8,13 +8,28 @@ export default function Nav () {
       <a href='/'>
         <MainIcon />
       </a>
-      <ul>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/experience'>Experience</NavLink></li>
-        <li><NavLink to='/skills'>Skills</NavLink></li>
-        <li><NavLink to='/projects'>Projects</NavLink></li>
-        <li><NavLink to='/contact'>Contact</NavLink></li>
-      </ul>
+      <Tabs
+        tabs={
+        [
+          {
+            label: 'Experience',
+            path: '/experience'
+          },
+          {
+            label: 'Skills',
+            path: '/skills'
+          },
+          {
+            label: 'Projects',
+            path: '/projects'
+          },
+          {
+            label: 'Contact',
+            path: '/contact'
+          }
+        ]
+    }
+      />
     </nav>
   )
 }
