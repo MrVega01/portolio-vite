@@ -6,7 +6,15 @@
   font-family: Gotham-Bold;
   src: url(./fonts/GothamBlack.otf);
 }
+@font-face {
+  font-family: Geist;
+  src: url(./fonts/Geist-Regular.otf);
+}
+@font-face {
+  font-family: Geist-Bold;
+  src: url(./fonts/Geist-Black.otf);
+}
 body {
-  font-family: Gotham;
+  font-family: Geist;
   margin: 0;
 }

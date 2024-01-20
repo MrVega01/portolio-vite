@@ -28,7 +28,7 @@
     padding: 0 10vw;
 }
 .sectionPresentation h1{
-    font-family: Gotham-Bold;
+    font-family: Geist-Bold;
     font-size: 6vw;
     margin: 0.2em 0;
 }
@@ -37,7 +37,7 @@
     line-height: 1.5;
 }
 .sectionPresentation p > b{
-    font-family: Gotham-Bold;
+    font-family: Geist-Bold;
 }
 /*EXPERIENCE*/
 .sectionExperience{
@@ -48,7 +48,7 @@
     padding: 20vh 0;
 }
 .sectionExperience h2{
-    font-family: Gotham-Bold;
+    font-family: Geist-Bold;
     margin-bottom: 2em;
     font-size: 2em;
 }
@@ -57,7 +57,7 @@
     min-height: 100vh;
 }
 .sectionSkills h2{
-    font-family: Gotham-Bold;
+    font-family: Geist-Bold;
     font-size: 2em;
 }
 /*Section projects*/
@@ -68,7 +68,7 @@
     padding-bottom: 2em;
 }
 .sectionProjects h2{
-    font-family: Gotham-Bold;
+    font-family: Geist-Bold;
     font-size: 2em;
     margin-bottom: 0.3em;
 }
@@ -92,7 +92,7 @@
     justify-content: center;
 }
 .sectionContact h2{
-    font-family: Gotham-Bold;
+    font-family: Geist-Bold;
     font-size: 2em;
     margin-bottom: 0.3em;
 }

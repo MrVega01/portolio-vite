@@ -17,7 +17,7 @@ export default function Home () {
       <section className='sectionPresentation'>
         <sub>Hello, I'm</sub>
         <h1>José Ignacio Vega</h1>
-        <p><b>Full Stack Developer</b> with 2 year of experience.
+        <p><b>Full Stack Developer</b> with 2 years of experience.
           <br /><br />Professional with the preparation to face challenges, be up to date and take the leadership in decisions. Fast learning career path, responsibility, adaptability and knowledge in agile methodologies such as SCRUM. With experience in Backend, Frontend, Mobile and Cloud development.
         </p>
       </section>
