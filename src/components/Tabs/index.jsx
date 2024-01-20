@@ -56,10 +56,10 @@ export default function Tabs ({ tabs }) {
               opacity: 0
             }}
             animate={{
-              x: `calc(${hoveredRect.left - ulRect.left}px - 8%)`,
-              y: `calc(${hoveredRect.top - ulRect.top}px + 27%)`,
-              width: hoveredRect.width * 1.2,
-              height: hoveredRect.height * 0.6,
+              x: `calc(${hoveredRect.left - ulRect.left}px - 15%)`,
+              y: `calc(${hoveredRect.top - ulRect.top}px - 3%)`,
+              width: hoveredRect.width * 1.5,
+              height: hoveredRect.height * 1,
               opacity: 1
             }}
             exit={{
