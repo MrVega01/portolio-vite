@@ -14,6 +14,9 @@
   font-family: Geist-Bold;
   src: url(./fonts/Geist-Black.otf);
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: Geist;
   margin: 0;

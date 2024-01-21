@@ -13,19 +13,19 @@ export default function Nav () {
         [
           {
             label: 'Experience',
-            path: '/experience'
+            path: '#experience'
           },
           {
             label: 'Skills',
-            path: '/skills'
+            path: '#skills'
           },
           {
             label: 'Projects',
-            path: '/projects'
+            path: '#projects'
           },
           {
             label: 'Contact',
-            path: '/contact'
+            path: '#contact'
           }
         ]
     }

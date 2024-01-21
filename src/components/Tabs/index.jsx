@@ -1,7 +1,6 @@
 import './styles.css'
 import { useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { NavLink } from 'react-router-dom'
 
 const transition = {
   type: 'tween',
@@ -37,7 +36,7 @@ export default function Tabs ({ tabs }) {
               setHoveredTabIndex(i)
             }}
           >
-            <NavLink to={path}>{label}</NavLink>
+            <a href={path}>{label}</a>
           </motion.li>
         )
       })

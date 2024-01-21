@@ -3,15 +3,8 @@ import InfoBar from '../../components/InfoBar'
 import SkillsGroup from '../../components/SkillsGroup'
 import { CurvedSeparator, WavesSeparator } from '../../components/Separators/Separators'
 import ProjectList from '../../components/ProjectList'
-import { useEffect, useRef } from 'react'
-import { useParams } from 'react-router-dom'
 
 export default function Home () {
-  const { path } = useParams()
-  const refs = useRef({})
-  useEffect(() => {
-    path && refs.current[path]?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-  }, [path])
   return (
     <main className='sectionMain'>
       <section className='sectionPresentation'>
@@ -23,7 +16,7 @@ export default function Home () {
       </section>
 
       <div className='sectionSecondary'>
-        <section className='sectionExperience' ref={el => { refs.current.experience = el }}>
+        <section className='sectionExperience' id='experience'>
           <h2>Where I've work?</h2>
           <InfoBar
             data={[
@@ -50,7 +43,7 @@ export default function Home () {
           />
         </section>
 
-        <section className='sectionSkills' ref={el => { refs.current.skills = el }}>
+        <section className='sectionSkills' id='skills'>
           <h2>Technical skills</h2>
           <SkillsGroup />
         </section>
@@ -66,7 +59,7 @@ export default function Home () {
         ]}
       />
       <div className='sectionTertiary'>
-        <section className='sectionProjects' ref={el => { refs.current.projects = el }}>
+        <section className='sectionProjects' id='projects'>
           <h2>My projects!</h2>
           <a className='repositoriesLink' target='_blank' rel='noopener noreferrer' href='https://github.com/MrVega01?tab=repositories'>Check all my repositories</a>
           <ProjectList />
@@ -74,7 +67,7 @@ export default function Home () {
       </div>
       <CurvedSeparator background='#f8931d' color='#161623' />
       <div className='sectionQuaternary'>
-        <section className='sectionContact' ref={el => { refs.current.contact = el }}>
+        <section className='sectionContact' id='contact'>
           <h2>Contact me!</h2>
           <sub>Send me a message on LinkedIn, I'm very active there. You can also check out my GitHub profile and get to know me better 👾</sub>
           <div>
