@@ -17,6 +17,6 @@ nav > a {
     color: rgb(248, 147, 29)
 }
 nav > ul {
-    background: rgb(22, 22, 35);
+    backdrop-filter: blur(10000px);
     padding: 0px 8px;
 }
