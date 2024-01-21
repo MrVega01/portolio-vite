@@ -29,11 +29,11 @@
 }
 .sectionPresentation h1{
     font-family: Geist-Bold;
-    font-size: 6vw;
+    font-size: 3rem;
     margin: 0.2em 0;
 }
 .sectionPresentation p, .sectionPresentation sub{
-    font-size: 0.8em;
+    font-size: 1rem;
     line-height: 1.5;
 }
 .sectionPresentation p > b{
@@ -50,7 +50,7 @@
 .sectionExperience h2{
     font-family: Geist-Bold;
     margin-bottom: 2em;
-    font-size: 2em;
+    font-size: 2rem;
 }
 /*SKILLS*/
 .sectionSkills{
@@ -58,7 +58,7 @@
 }
 .sectionSkills h2{
     font-family: Geist-Bold;
-    font-size: 2em;
+    font-size: 2rem;
 }
 /*Section projects*/
 .sectionProjects{
@@ -69,12 +69,12 @@
 }
 .sectionProjects h2{
     font-family: Geist-Bold;
-    font-size: 2em;
+    font-size: 2rem;
     margin-bottom: 0.3em;
 }
 .repositoriesLink{
     margin-bottom: 5em;
-    font-size: .6em;
+    font-size: 0.8rem;
     font-weight: 700;
     color: rgba(255, 255, 255, 0.8);
     transition: color 0.3s;
@@ -92,11 +92,11 @@
 }
 .sectionContact h2{
     font-family: Geist-Bold;
-    font-size: 2em;
+    font-size: 2rem;
     margin-bottom: 0.3em;
 }
 .sectionContact sub{
-    font-size: 0.6em;
+    font-size: 1rem;
     color: rgba(255, 255, 255, 0.6);
 }
 .sectionContact div{
@@ -107,13 +107,13 @@
 .svgLinkedin, .svgGithub{
     fill: rgb(248, 147, 29);
     transition: fill 0.3s;
-    width: 3em;
-    height: 3em;
-    margin: 0 0.5em;
+    width: 60px;
+    height: 60px;
+    margin: 0 15px;
 }
 .svgGithub{
-    width: 3.5em;
-    height: 3.5em;
+    width: 70px;
+    height: 70px;
 }
 .svgGithub:hover{
     fill: #fff;
