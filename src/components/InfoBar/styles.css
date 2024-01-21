@@ -12,19 +12,20 @@
     text-align: start;
     width: 72%;
 }
-.infoBar div:nth-child(2) h1{
-    font-size: 1em;
+.infoBar div:nth-child(2) h3{
+    color: rgb(248, 147, 29);
+    font-size: 1.2rem;
     font-family: Geist-Bold;
     margin: 0;
 }
-.infoBar div:nth-child(2) h2{
-    font-size: 0.7em;
+.infoBar div:nth-child(2) h4{
+    font-size: 1.1rem;
     font-family: Geist-Bold;
     margin: 0;
 }
 .infoBar div:nth-child(2) sub{
-    font-size: 0.6em;
+    font-size: 0.8rem;
 }
 .infoBar div:nth-child(2) p{
-    font-size: 0.8em;
+    font-size: 1rem;
 }

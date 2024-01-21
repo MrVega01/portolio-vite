@@ -22,8 +22,8 @@ export default function Home () {
             data={[
               {
                 company: 'Assett+',
-                occupation: 'FullStack Javascript Developer',
-                time: 'March 2022 - Now',
+                occupation: 'FullStack and Mobile Developer',
+                time: 'March 2022 - February 2024',
                 description: 'Company dedicated to the web development using multiple technologies. The knowledge acquired was huge.',
                 responsibilities: [
                   'Support in design creation, structures, and web pages optimization.',
@@ -32,6 +32,7 @@ export default function Home () {
                   'Assist in existing client projects.'
                 ],
                 accomplishments: [
+                  'Develop a mobile app built in React Native & Expo for EmpleoRD, a website platform to find jobs in Dominican Republic, which have functionalities such as log in, job browsing with swipe, applications and private chat powered by socket.io (websockets) & SQL database.',
                   'Create a website with ReactJS for the Dominican brewery "Presidente", based on designs created with Figma, using React with CRA/Vite and giving support to the responsive design, animations, optimization and much more.',
                   'Develop an API REST to create a connection between a MongoDB database and the Frontend of React pages, also working with webhooks, auth systems, CORS, mongoose and others functionalities.',
                   'Maintain support in Discord bots created with Node.js, fixing bugs, improving the optimization, connecting with third-services, making connections with MongoDB, and other features.',

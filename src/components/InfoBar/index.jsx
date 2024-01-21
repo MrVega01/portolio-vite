@@ -16,15 +16,15 @@ export default function InfoBar ({ data }) {
         }
       </div>
       <div>
-        <h1>{`${occupation} in ${company}`}</h1>
+        <h3>{`${occupation} in ${company}`}</h3>
         <sub>{time}</sub>
 
         <p>{description}</p>
-        <h2>Responsibilities</h2>
+        <h4>Responsibilities</h4>
         <List
           elements={responsibilities}
         />
-        <h2>Key accomplishments</h2>
+        <h4>Key accomplishments</h4>
         <List
           elements={accomplishments}
         />
