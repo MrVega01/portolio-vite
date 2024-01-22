@@ -24,8 +24,8 @@
     align-items: flex-start;
     justify-content: center;
     text-align: left;
-    min-height: 100vh;
-    padding: 0 10vw;
+    min-height: calc(100vh - 200px);
+    padding: 100px 10vw 0 10vw;
 }
 .sectionPresentation h1{
     font-family: Geist-Bold;
