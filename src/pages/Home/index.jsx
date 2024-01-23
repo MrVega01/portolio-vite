@@ -3,19 +3,22 @@ import InfoBar from '../../components/InfoBar'
 import SkillsGroup from '../../components/SkillsGroup'
 import { CurvedSeparator, WavesSeparator } from '../../components/Separators/Separators'
 import ProjectList from '../../components/ProjectList'
+import WorldAnimation from '../../components/WorldAnimation'
 
 export default function Home () {
   return (
     <main className='sectionMain'>
-      <section className='sectionPresentation'>
-        <sub>Hello, I'm</sub>
-        <h1>José Ignacio Vega</h1>
-        <p><b>Full Stack Developer</b> with 2 years of experience.
-          <br /><br />Professional with the preparation to face challenges, be up to date and take the leadership in decisions. Fast learning career path, responsibility, adaptability and knowledge in agile methodologies such as SCRUM. With experience in Backend, Frontend, Mobile and Cloud development.
-        </p>
-      </section>
-
       <div className='sectionSecondary'>
+        <WorldAnimation />
+
+        <section className='sectionPresentation'>
+          <sub>Hello, I'm</sub>
+          <h1>José Ignacio Vega</h1>
+          <p><b>Full Stack Developer</b> with 2 years of experience.
+            <br /><br />Professional with the preparation to face challenges, be up to date and take the leadership in decisions. Fast learning career path, responsibility, adaptability and knowledge in agile methodologies such as SCRUM. With experience in Backend, Frontend, Mobile and Cloud development.
+          </p>
+        </section>
+
         <section className='sectionExperience' id='experience'>
           <h2>Where I've work?</h2>
           <InfoBar
@@ -42,6 +45,7 @@ export default function Home () {
               }
             ]}
           />
+          <div className='sectionSecondaryBackground' />
         </section>
 
         <section className='sectionSkills' id='skills'>

@@ -1,12 +1,12 @@
 .worldCanvas{
-    background: rgb(22, 22, 35);
-    z-index: -5;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    position: fixed;
+    overflow: hidden;
+    position: absolute;
     top: 0;
     left: 0;
 }
 .worldCanvas > canvas {
+    width: min-content;
     opacity: 0.4;
 }
