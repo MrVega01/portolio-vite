@@ -1,0 +1,16 @@
+:root{
+  /* Dark */
+    /* Color */
+    --dark-color-primary: rgb(248, 147, 29);
+    --dark-color-secondary: rgb(22, 22, 35);
+    --dark-color-textPrimary: white;
+    --dark-color-textSecondary: #fff9;
+    --dark-color-textTertiary: rgb(248, 147, 29);
+
+  /* General */
+  --color-primary: var(--dark-color-primary);
+  --color-secondary: var(--dark-color-secondary);
+  --color-textPrimary: var(--dark-color-textPrimary);
+  --color-textSecondary: var(--dark-color-textSecondary);
+  --color-textTertiary: var(--dark-color-textTertiary);
+}
