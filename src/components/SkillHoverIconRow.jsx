@@ -10,7 +10,11 @@ import {
   NodeJSIcon,
   PlaywrightIcon,
   ReactIcon,
-  TypeScriptIcon
+  TypeScriptIcon,
+  SocketIOIcon,
+  ZodIcon,
+  SentryIcon,
+  SQLiteIcon
 } from './Icons'
 
 export default function SkillHoverIconRow ({ skills }) {
@@ -24,6 +28,9 @@ export default function SkillHoverIconRow ({ skills }) {
       }
       case 'MySQL': {
         return { component: <MySQLIcon />, name: skill }
+      }
+      case 'SQLite': {
+        return { component: <SQLiteIcon />, name: skill }
       }
       case 'MongoDB': {
         return { component: <MongoDBIcon />, name: skill }
@@ -48,6 +55,15 @@ export default function SkillHoverIconRow ({ skills }) {
       }
       case 'Expo': {
         return { component: <ExpoDarkIcon />, name: skill }
+      }
+      case 'Socket.io': {
+        return { component: <SocketIOIcon />, name: skill }
+      }
+      case 'Zod': {
+        return { component: <ZodIcon />, name: skill }
+      }
+      case 'Sentry': {
+        return { component: <SentryIcon />, name: skill }
       }
       default: return null
     }

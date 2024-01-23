@@ -7,13 +7,13 @@ export default function ProjectCard ({
   title,
   description,
   skills = [],
-  repository = '#',
+  repository,
   website
 }) {
   return (
     <article className='projectCard'>
       <aside>
-        <img src={img} alt={`Sample of ${title} project`} />
+        <img loading='lazy' src={img} alt={`Sample of ${title} project`} />
       </aside>
       <div>
         <header>
@@ -22,9 +22,11 @@ export default function ProjectCard ({
         <h3>{title}</h3>
         <p>{description}</p>
         <footer>
-          <a target='_blank' rel='noopener noreferrer' href={repository} title='View code'>
-            <GitHubIcon />
-          </a>
+          {repository && (
+            <a target='_blank' rel='noopener noreferrer' href={repository} title='View code'>
+              <GitHubIcon />
+            </a>
+          )}
           {website && (
             <a target='_blank' rel='noopener noreferrer' href={website} title='View deployment'>
               <ExternalLinkIcon />
