@@ -1,3 +1,4 @@
+import { ButtonIcon } from '../ButtonIcon'
 import { ExternalLinkIcon, GitHubIcon } from '../Icons'
 import SkillHoverIconRow from '../SkillHoverIconRow'
 import './styles.css'
@@ -23,14 +24,22 @@ export default function ProjectCard ({
         <p>{description}</p>
         <footer>
           {repository && (
-            <a target='_blank' rel='noopener noreferrer' href={repository} title='View code'>
+            <ButtonIcon
+              title='Ver repositorio'
+              href={repository}
+              className='ButtonIconGithub'
+            >
               <GitHubIcon />
-            </a>
+            </ButtonIcon>
           )}
           {website && (
-            <a target='_blank' rel='noopener noreferrer' href={website} title='View deployment'>
+            <ButtonIcon
+              title='Ir al sitio web'
+              href={website}
+              className='ButtonIconWebsite'
+            >
               <ExternalLinkIcon />
-            </a>
+            </ButtonIcon>
           )}
         </footer>
       </div>

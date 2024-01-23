@@ -32,23 +32,16 @@
 }
 .projectCard footer{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 12px;
+  margin-top: 20px;
 }
-.projectCard footer a > svg{
-  opacity: 0.8;
-  width: 38px;
-  height: 38px;
-  transition: opacity 0.2s;
-}
-.projectCard footer a:first-child > svg{
+.projectCard footer > .ButtonIconGithub > svg{
   fill: #fff;
 }
-.projectCard footer a:last-child > svg path{
+.projectCard footer > .ButtonIconWebsite > svg path{
   stroke: #fff;
-}
-.projectCard footer a > svg:hover{
-  opacity: 1;
 }
 @media(max-width: 620px){
   .projectCard{
