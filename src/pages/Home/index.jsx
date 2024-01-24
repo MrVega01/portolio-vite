@@ -55,7 +55,6 @@ export default function Home () {
       </div>
 
       <WavesSeparator
-        background='#161623'
         colors={[
           '#8a4b01',
           '#ad5f03',

@@ -1,7 +1,7 @@
 import { useId } from 'react'
 import './styles.css'
 
-export function WavesSeparator ({ colors = ['#fff', '#f0f', '#ff0', '#1ff'], background = '#000' }) {
+export function WavesSeparator ({ colors = ['#fff', '#f0f', '#ff0', '#1ff'] }) {
   const pathId = useId()
   return (
     <svg
@@ -10,7 +10,6 @@ export function WavesSeparator ({ colors = ['#fff', '#f0f', '#ff0', '#1ff'], bac
       xmlnsXlink='http://www.w3.org/1999/xlink'
       viewBox='0 24 150 28 '
       preserveAspectRatio='none'
-      style={{ background }}
     >
       <defs>
         <path
