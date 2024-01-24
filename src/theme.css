@@ -6,6 +6,7 @@
     --dark-color-textPrimary: white;
     --dark-color-textSecondary: #fff9;
     --dark-color-textTertiary: rgb(248, 147, 29);
+    --dark-color-textQuaternary: rgb(254 202 202);
 
   /* General */
   --color-primary: var(--dark-color-primary);
@@ -13,5 +14,14 @@
   --color-textPrimary: var(--dark-color-textPrimary);
   --color-textSecondary: var(--dark-color-textSecondary);
   --color-textTertiary: var(--dark-color-textTertiary);
+  --color-textQuaternary: var(--dark-color-textQuaternary);
   --color-white: #ffffff;
+
+  /* Font */
+
+  --font-xl: 1.8rem;
+  --font-lg: 1.5rem;
+  --font-md: 1.25rem;
+  --font-sm: 1rem;
+  --font-xs: 0.8rem;
 }
