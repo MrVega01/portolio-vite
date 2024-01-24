@@ -13,4 +13,5 @@
   --color-textPrimary: var(--dark-color-textPrimary);
   --color-textSecondary: var(--dark-color-textSecondary);
   --color-textTertiary: var(--dark-color-textTertiary);
+  --color-white: #ffffff;
 }
