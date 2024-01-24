@@ -6,7 +6,8 @@ import ProjectList from '../../components/ProjectList'
 import WorldAnimation from '../../components/WorldAnimation'
 import Badge from '../../components/Badge'
 import { ButtonIcon } from '../../components/ButtonIcon'
-import { GitHubIcon, LinkedInIcon, MailIcon } from '../../components/Icons'
+import { GitHubIcon, LinkedInIcon, MailIcon, ResumeIcon } from '../../components/Icons'
+import CVFile from './../../../public/Full-Stack-Developer-Jose-Ignacio-Vega.pdf'
 
 export default function Home () {
   return (
@@ -24,6 +25,7 @@ export default function Home () {
           <div>
             <ButtonIcon title='LinkedIn' href='https://www.linkedin.com/in/jos%C3%A9-vega-89135421a/'><LinkedInIcon /></ButtonIcon>
             <ButtonIcon title='GitHub' href='https://github.com/MrVega01'><GitHubIcon /></ButtonIcon>
+            <ButtonIcon title='Resume' href={CVFile} download='CV Full Stack Developer - Jose Ignacio Vega'><ResumeIcon /></ButtonIcon>
             <ButtonIcon title='ignaciovega200301@gmail.com' href='mailto:ignaciovega200301@gmail.com'><MailIcon /></ButtonIcon>
           </div>
         </section>
