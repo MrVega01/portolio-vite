@@ -4,6 +4,9 @@ import SkillsGroup from '../../components/SkillsGroup'
 import { CurvedSeparator, WavesSeparator } from '../../components/Separators/Separators'
 import ProjectList from '../../components/ProjectList'
 import WorldAnimation from '../../components/WorldAnimation'
+import Badge from '../../components/Badge'
+import { ButtonIcon } from '../../components/ButtonIcon'
+import { GitHubIcon, LinkedInIcon, MailIcon } from '../../components/Icons'
 
 export default function Home () {
   return (
@@ -13,10 +16,16 @@ export default function Home () {
 
         <section className='sectionPresentation'>
           <sub>Hello, I'm</sub>
-          <h1>José Ignacio Vega</h1>
-          <p><b>Full Stack Developer</b> with 2 years of experience.
-            <br /><br />Professional with the preparation to face challenges, be up to date and take the leadership in decisions. Fast learning career path, responsibility, adaptability and knowledge in agile methodologies such as SCRUM. With experience in Backend, Frontend, Mobile and Cloud development.
-          </p>
+          <div>
+            <h1>José Ignacio Vega</h1>
+            <Badge title='Open to work!' />
+          </div>
+          <p>2 years of experience. Full Stack Developer with experience in <span>Backend, Frontend, Mobile and Cloud development</span>. From Venezuela, and lover of good practices.</p>
+          <div>
+            <ButtonIcon title='LinkedIn' href='https://www.linkedin.com/in/jos%C3%A9-vega-89135421a/'><LinkedInIcon /></ButtonIcon>
+            <ButtonIcon title='GitHub' href='https://github.com/MrVega01'><GitHubIcon /></ButtonIcon>
+            <ButtonIcon title='ignaciovega200301@gmail.com' href='mailto:ignaciovega200301@gmail.com'><MailIcon /></ButtonIcon>
+          </div>
         </section>
 
         <section className='sectionExperience' id='experience'>
