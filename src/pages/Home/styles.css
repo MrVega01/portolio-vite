@@ -37,6 +37,9 @@
     align-items: center;
     gap: 24px;
 }
+.sectionPresentation > div:last-child {
+    max-width: 700px;
+}
 .sectionPresentation > div:last-child a svg {
     filter: brightness(0) invert(1);
 }
@@ -60,7 +63,7 @@
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
-    padding: 20vh 0;
+    padding: 20px 0 80px 0;
 }
 .sectionExperience h2{
     font-family: Geist-Bold;
@@ -70,6 +73,7 @@
 /*SKILLS*/
 .sectionSkills{
     min-height: 100vh;
+    padding-bottom: 80px;
 }
 .sectionSkills h2{
     font-family: Geist-Bold;
