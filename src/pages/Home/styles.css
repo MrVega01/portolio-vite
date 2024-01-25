@@ -14,6 +14,8 @@
     padding: 0 10%;
 }
 .sectionQuaternary{
+    display: flex;
+    flex-direction: column;
     background: var(--color-secondary);
     width: 80%;
     padding: 0 10%;
@@ -103,40 +105,31 @@
 }
 /*CONTACT*/
 .sectionContact{
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    align-self: center;
+    max-width: 600px;
+    gap: 12px;
 }
 .sectionContact h2{
     font-family: Geist-Bold;
     font-size: 2rem;
-    margin-bottom: 0.3em;
+    margin: 0;
 }
-.sectionContact sub{
+.sectionContact p{
     font-size: 1rem;
     color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 36px;
 }
-.sectionContact div{
-    margin-top: 2em;
+.sectionContact form > div {
     display: flex;
-    align-items: center;
+    gap: 12px;
 }
-.svgLinkedin, .svgGithub{
-    fill: var(--color-primary);
-    transition: fill 0.3s;
-    width: 60px;
-    height: 60px;
-    margin: 0 15px;
-}
-.svgGithub{
-    width: 70px;
-    height: 70px;
-}
-.svgGithub:hover{
-    fill: #fff;
-}
-.svgLinkedin:hover{
-    fill: #0b67c3;
+@media (width < 640px) {
+    .sectionContact form > div {
+        flex-wrap: wrap;
+    }
 }
