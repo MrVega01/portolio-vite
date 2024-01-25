@@ -8,9 +8,7 @@ import Badge from '../../components/Badge'
 import { ButtonIcon } from '../../components/ButtonIcon'
 import { GitHubIcon, LinkedInIcon, MailIcon, ResumeIcon } from '../../components/Icons'
 import CVFile from './../../../public/Full-Stack-Developer-Jose-Ignacio-Vega.pdf'
-import StyledInput from '../../components/StyledInput'
-import StyledTextArea from '../../components/StyledTextArea'
-import Form from '../../components/Form'
+import ContactForm from '../../components/ContactForm'
 
 export default function Home () {
   return (
@@ -88,13 +86,7 @@ export default function Home () {
         <section className='sectionContact' id='contact'>
           <h2>Contact me!</h2>
           <p>If you have a project in mind, have a question or simply want to say hi, please send me a message.</p>
-          <Form textSubmit='Send'>
-            <div>
-              <StyledInput label='Name' name='name' type='text' placeholder='Bruce Wayne' required />
-              <StyledInput label='Email' name='email' type='email' placeholder='contact@batman.com' required />
-            </div>
-            <StyledTextArea label='Message' placeholder='Write your thoughts here...' required />
-          </Form>
+          <ContactForm />
         </section>
       </div>
     </main>

@@ -1,0 +1,9 @@
+.ContactForm > div {
+  display: flex;
+  gap: 12px;
+}
+@media (width < 640px) {
+  .sectionContact form > div {
+      flex-wrap: wrap;
+  }
+}
