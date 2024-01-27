@@ -1,23 +1,21 @@
-// // using Twilio SendGrid's v3 Node.js Library
-// // https://github.com/sendgrid/sendgrid-nodejs
-// import sgMail from '@sendgrid/mail'
-// import { SENDGRID_CONFIG } from '../utils/config.js'
-// const { apiKey } = SENDGRID_CONFIG
+import { SENDGRID_CONFIG } from '../utils/config'
 
-// export default async function sendEmail ({ to, subject, html }) {
-//   try {
-//     sgMail.setApiKey(apiKey)
-//     const msg = {
-//       to,
-//       from: 'ignaciovega200301@gmail.com',
-//       subject,
-//       html
-//     }
-//     return sgMail.send(msg)
-//       .then(() => {
-//         return true
-//       })
-//   } catch (error) {
-
-//   }
-// }
+export default async function sendEmail ({ subject, html }) {
+  try {
+    const { apiUrl } = SENDGRID_CONFIG
+    return fetch(`${apiUrl}/email`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: {
+        subject,
+        html
+      }
+    }).then(() => {
+      return { error: null }
+    })
+  } catch (error) {
+    return { error }
+  }
+}

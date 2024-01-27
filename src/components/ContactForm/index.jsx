@@ -2,27 +2,26 @@ import './styles.css'
 import Form from '../Form'
 import StyledInput from '../StyledInput'
 import StyledTextArea from '../StyledTextArea'
+import sendEmail from '../../services/sendEmail'
 
 export default function ContactForm () {
   const submitHandler = (formValues) => {
     const { name, email, message } = formValues
-    // sendEmail({
-    //   to: 'ignaciovega200301@gmail.com',
-    //   subject: 'Form submitted from potfolio',
-    //   html: `
-    //     <p>
-    //       <b>Name: </b><br />
-    //       ${name}<br />
-    //       <b>Email: </b><br />
-    //       ${email}<br />
-    //       <b>Message: </b><br />
-    //       ${message}<br />
-    //     </p>
-    //   `
-    // }).then(() => {
-
-    // })
-    console.log(formValues)
+    sendEmail({
+      subject: 'Form submitted from potfolio',
+      html: `
+        <p>
+          <b>Name: </b><br />
+          ${name}<br />
+          <b>Email: </b><br />
+          ${email}<br />
+          <b>Message: </b><br />
+          ${message}<br />
+        </p>
+      `
+    }).then(({ error }) => {
+      console.log(error)
+    })
   }
   return (
     <Form textSubmit='Send' className='ContactForm' onSubmit={submitHandler}>
