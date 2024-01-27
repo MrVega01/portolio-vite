@@ -3,14 +3,15 @@ import Form from '../Form'
 import StyledInput from '../StyledInput'
 import StyledTextArea from '../StyledTextArea'
 import sendEmail from '../../services/sendEmail'
-import { useState } from 'react'
+import { useCallback, useState } from 'react'
 
 export default function ContactForm () {
   const [submitMessage, setSubmitMessage] = useState(false)
-  const submitHandler = (formValues) => {
+
+  const submitHandler = useCallback((formValues) => {
     const { name, email, message } = formValues
     sendEmail({
-      subject: 'Form submitted from potfolio',
+      subject: 'Form submitted from portfolio',
       html: `
         <p>
           <b>Name: </b><br />
@@ -27,7 +28,8 @@ export default function ContactForm () {
       } else setSubmitMessage('Something went wrong 😟')
       setTimeout(() => setSubmitMessage(false), 3000)
     })
-  }
+  }, [])
+
   return (
     <>
       <Form textSubmit='Send' className='ContactForm' onSubmit={submitHandler}>
