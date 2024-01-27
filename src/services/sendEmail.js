@@ -2,16 +2,17 @@ import { SENDGRID_CONFIG } from '../utils/config'
 
 export default async function sendEmail ({ subject, html }) {
   try {
-    const { apiUrl } = SENDGRID_CONFIG
+    const { apiUrl, apiKey } = SENDGRID_CONFIG
     return fetch(`${apiUrl}/email`, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        Authorization: apiKey
       },
-      body: {
+      body: JSON.stringify({
         subject,
-        html
-      }
+        content: html
+      })
     }).then(() => {
       return { error: null }
     })
