@@ -10,7 +10,12 @@
   inset: -1000%;
   animation: spin 2s linear infinite;
   position: absolute; 
+}
+.Badge--primary > span:first-child {
   background: conic-gradient(from 90deg at 50% 50%,#E2CBFF 0%, #393BB2 50%, #E2CBFF 100%);
+}
+.Badge--danger > span:first-child {
+  background: conic-gradient(from 90deg at 50% 50%,#f58d8d 0%, #b23939 50%, #f58d8d 100%);
 }
 .Badge > span:last-child {
   display: inline-flex; 

@@ -20,10 +20,16 @@ export default function InfoBar ({ data }) {
         <sub>{time}</sub>
 
         <p>{description}</p>
-        <h4>Responsibilities</h4>
-        <List
-          elements={responsibilities}
-        />
+        {
+          responsibilities && (
+            <>
+              <h4>Responsibilities</h4>
+              <List
+                elements={responsibilities}
+              />
+            </>
+          )
+        }
         <h4>Key accomplishments</h4>
         <List
           elements={accomplishments}

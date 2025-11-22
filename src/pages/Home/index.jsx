@@ -20,9 +20,9 @@ export default function Home () {
           <sub>Hello, I'm</sub>
           <div>
             <h1>José Ignacio Vega</h1>
-            <Badge title='Open to work!' />
+            <Badge title='Not job hunting right now' status='danger' />
           </div>
-          <p>2 years of experience. Full Stack Developer with experience in <span>Backend, Frontend, Mobile and Cloud development</span>. From Venezuela, and lover of good practices.</p>
+          <p>4 years of experience. Full Stack Developer with experience in <span>Backend, Frontend, Mobile and Cloud development</span>. From Venezuela, and lover of good practices.</p>
           <div>
             <ButtonIcon title='LinkedIn' href='https://www.linkedin.com/in/jos%C3%A9-vega-89135421a/'><LinkedInIcon /></ButtonIcon>
             <ButtonIcon title='GitHub' href='https://github.com/MrVega01'><GitHubIcon /></ButtonIcon>
@@ -35,6 +35,18 @@ export default function Home () {
           <h2>Where I've work?</h2>
           <InfoBar
             data={[
+              {
+                company: 'Nrby',
+                occupation: 'Tech Lead | Software Engineer',
+                time: 'February 2024 - Present',
+                description: 'Nrby is a platform built to simplify and accelerate operations through predictive intelligence, AI, and machine learning. This proprietary model framework transforms raw network data into real-time, actionable insights across an entire operation. At the core of Nrby is the SmartPins™ technology; AI-triggered, geolocated containers and digital workflows that automate the detection, triage, and resolution of service issues in the field or in customer care. This turns complex data into immediate, trackable actions that empower teams to work faster, smarter, and more proactively.',
+                accomplishments: [
+                  'Led the development of Nrby 2.0 for Android and iOS, rebuilding the entire application from scratch, including a redesigned UI, full implementation of SmartPins™ technology, and complete feature parity with version 1.0.',
+                  'Onboarded and mentored new mobile team members, guiding them through the application’s architecture, best practices and modularization principles, while standardizing coding conventions and ensuring high-quality, consistent development across the team.',
+                  'Implemented robust offline support leveraging SQLite and adaptive logic to seamlessly handle functionality based on the user’s network connectivity.',
+                  'Delivered major performance improvements over Nrby 1.0 on both Android and iOS, resulting in significantly reduced loading times, smoother map interactions (Google Maps), and faster in-app navigation.'
+                ]
+              },
               {
                 company: 'Assett+',
                 occupation: 'FullStack and Mobile Developer',
