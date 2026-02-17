@@ -41,11 +41,18 @@ export default function Home () {
                 occupation: 'Tech Lead | Software Engineer',
                 time: 'February 2024 - Present',
                 description: 'Nrby is a platform built to simplify and accelerate operations through predictive intelligence, AI, and machine learning. This proprietary model framework transforms raw network data into real-time, actionable insights across an entire operation. At the core of Nrby is the SmartPins™ technology; AI-triggered, geolocated containers and digital workflows that automate the detection, triage, and resolution of service issues in the field or in customer care. This turns complex data into immediate, trackable actions that empower teams to work faster, smarter, and more proactively.',
+                responsibilities: [
+                  'Contribute to the development of Nrby’s next-generation geospatial platform, primarily focusing on the mobile app engineering.',
+                  'Design and implement scalable, data-driven user interface components, collaborating with backend engineers to integrate APIs and ensure seamless system functionality.',
+                  'Participate in sprint planning and agile development processes, delivering assigned features and enhancements on schedule while maintaining high code quality.'
+                ],
                 accomplishments: [
                   'Led the development of Nrby 2.0 for Android and iOS, rebuilding the entire application from scratch, including a redesigned UI, full implementation of SmartPins™ technology, and complete feature parity with version 1.0.',
                   'Onboarded and mentored new mobile team members, guiding them through the application’s architecture, best practices and modularization principles, while standardizing coding conventions and ensuring high-quality, consistent development across the team.',
-                  'Implemented robust offline support leveraging SQLite and adaptive logic to seamlessly handle functionality based on the user’s network connectivity.',
-                  'Delivered major performance improvements over Nrby 1.0 on both Android and iOS, resulting in significantly reduced loading times, smoother map interactions (Google Maps), and faster in-app navigation.'
+                  'Played a key role in reducing the cost-to-revenue ratio from $1.75 to under $0.20 per $1 earned, representing an 88% improvement in operational margins.',
+                  'Awarded the Product Innovation of the Year at Altice USA\'s Technology Innovation Summit.',
+                  'Delivered major performance improvements over Nrby 1.0 on both Android and iOS, resulting in significantly reduced loading times, smoother map interactions (Google Maps), and faster in-app navigation.',
+                  'Implemented robust offline support leveraging SQLite and adaptive logic to seamlessly handle functionality based on the user’s network connectivity.'
                 ]
               },
               {
