@@ -7,8 +7,9 @@ import WorldAnimation from '../../components/WorldAnimation'
 import Badge from '../../components/Badge'
 import { ButtonIcon } from '../../components/ButtonIcon'
 import { GitHubIcon, LinkedInIcon, MailIcon, ResumeIcon } from '../../components/Icons'
-import CVFile from './../../../public/Full-Stack-Developer-Jose-Ignacio-Vega.pdf'
 import ContactForm from '../../components/ContactForm'
+
+const CVFile = '/Full-Stack-Developer-Jose-Ignacio-Vega.pdf'
 
 export default function Home () {
   return (
@@ -20,9 +21,9 @@ export default function Home () {
           <sub>Hello, I'm</sub>
           <div>
             <h1>José Ignacio Vega</h1>
-            <Badge title='Not job hunting right now' status='danger' />
+            <Badge title='Open to work!' status='primary' />
           </div>
-          <p>4 years of experience. Full Stack Developer with experience in <span>Backend, Frontend, Mobile and Cloud development</span>. From Venezuela, and lover of good practices.</p>
+          <p>4 years of experience. Full Stack Developer with experience as <span>Tech Lead</span>. Expert on Frontend, Backend, Mobile, and Cloud development. From Venezuela, and lover of good practices.</p>
           <div>
             <ButtonIcon title='LinkedIn' href='https://www.linkedin.com/in/jos%C3%A9-vega-89135421a/'><LinkedInIcon /></ButtonIcon>
             <ButtonIcon title='GitHub' href='https://github.com/MrVega01'><GitHubIcon /></ButtonIcon>

@@ -10,11 +10,19 @@ import {
   NodeJSIcon,
   PlaywrightIcon,
   ReactIcon,
-  TypeScriptIcon,
+  TypeScriptLettersIcon,
   SocketIOIcon,
   ZodIcon,
   SentryIcon,
-  SQLiteIcon
+  SQLiteIcon,
+  IonicIcon,
+  CapacitorIcon,
+  AndroidIcon,
+  IOSIcon,
+  PostgreSQLIcon,
+  NestJSIcon,
+  DockerIcon,
+  PrismaIcon
 } from './Icons'
 
 export default function SkillHoverIconRow ({ skills }) {
@@ -32,6 +40,30 @@ export default function SkillHoverIconRow ({ skills }) {
       case 'SQLite': {
         return { component: <SQLiteIcon />, name: skill }
       }
+      case 'Ionic': {
+        return { component: <IonicIcon />, name: skill }
+      }
+      case 'Capacitor': {
+        return { component: <CapacitorIcon />, name: skill }
+      }
+      case 'PostgreSQL': {
+        return { component: <PostgreSQLIcon />, name: skill }
+      }
+      case 'NestJS': {
+        return { component: <NestJSIcon />, name: skill }
+      }
+      case 'Docker': {
+        return { component: <DockerIcon />, name: skill }
+      }
+      case 'Prisma': {
+        return { component: <PrismaIcon />, name: skill }
+      }
+      case 'Android': {
+        return { component: <AndroidIcon />, name: skill }
+      }
+      case 'iOS': {
+        return { component: <IOSIcon />, name: skill }
+      }
       case 'MongoDB': {
         return { component: <MongoDBIcon />, name: skill }
       }
@@ -42,7 +74,7 @@ export default function SkillHoverIconRow ({ skills }) {
         return { component: <AWSIcon />, name: skill }
       }
       case 'TypeScript': {
-        return { component: <TypeScriptIcon />, name: skill }
+        return { component: <TypeScriptLettersIcon />, name: skill }
       }
       case 'Playwright': {
         return { component: <PlaywrightIcon />, name: skill }
@@ -65,6 +97,7 @@ export default function SkillHoverIconRow ({ skills }) {
       case 'Sentry': {
         return { component: <SentryIcon />, name: skill }
       }
+
       default: return null
     }
   }).filter(el => el)

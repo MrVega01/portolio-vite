@@ -1,20 +1,24 @@
 import './styles.css'
 import ProjectCard from '../ProjectCard'
 // Images
-import misTesorosAppImg from '../../assets/projects/mis-tesoros.webp'
 import passwordGeneratorImg from '../../assets/projects/hacktoberfest.webp'
 import taxCalculatorImg from '../../assets/projects/tax-calculator.webp'
 import picotaImg from '../../assets/projects/picota.webp'
 import presidenteImg from '../../assets/projects/presidente.webp'
+import nrbyImg from '../../assets/projects/nrby.webp'
 
 export default function ProjectList () {
   return (
     <div className='projectList'>
       <ProjectCard
-        title='Picota App'
-        img={picotaImg}
-        description='Mobile application whose premise is to search for jobs for Dominicans and post jobs for companies and employers. The application is the mobile alternative to EmpleoRD.com for web, sharing jobs and accounts for both. Among the functionalities of the app we have: log in, job navigation with swipe, applications, private chat, video presentation of applicants, and more.'
-        skills={['React', 'Expo', 'Node.js', 'Express.js', 'MySQL', 'Socket.io', 'Zod', 'Sentry']}
+        title='Nrby+ (Nrby 2.0)'
+        img={nrbyImg}
+        description={[
+          'A mobile application built for Android and iOS. For this project, I performed as the Tech Lead, I spearheaded the ground-up reconstruction of our enterprise platform using React and TypeScript. My role involved leading the complete UI redesign while maintaining full feature parity with the legacy version and delivering major performance gains, specifically reducing loading times and optimizing Google Maps interactions for both Android and iOS.',
+          'To scale the team, I onboarded and mentored new developers, standardizing coding conventions and modularization principles to ensure high-quality development cycles. I also engineered a robust offline-first architecture using SQLite and adaptive logic to manage variable network connectivity. These technical and leadership efforts resulted in a significant 88% improvement in operational margins, reducing the cost-to-revenue ratio from $1.75 to under $0.20, and earned the Product Innovation of the Year award at the Altice USA Technology Innovation Summit.'
+        ]}
+        skills={['React', 'TypeScript', 'Node.js', 'SQLite', 'Ionic', 'Capacitor', 'Android', 'iOS', 'Jest']}
+        website='https://play.google.com/store/apps/details?id=com.nrby.mobile&pcampaignid=web_share'
       />
       <ProjectCard
         title='Payroll Deductions Calculator'
@@ -24,17 +28,16 @@ export default function ProjectList () {
         website='https://payrolldeductionscalculator.ca/'
       />
       <ProjectCard
+        title='Picota App'
+        img={picotaImg}
+        description='Mobile application whose premise is to search for jobs for Dominicans and post jobs for companies and employers. The application is the mobile alternative to EmpleoRD.com for web, sharing jobs and accounts for both. Among the functionalities of the app we have: log in, job navigation with swipe, applications, private chat, video presentation of applicants, and more.'
+        skills={['React', 'Expo', 'Node.js', 'Express.js', 'MySQL', 'Socket.io', 'Zod', 'Sentry']}
+      />
+      <ProjectCard
         title='Website for Dominican brewery "Presidente"'
         img={presidenteImg}
         description='Created for the NFT campaign of the Dominican National Brewery "Presidente". Although the website has been retired, it was approved and used, with features such as a NFT creator with templates and scroll animations, based on designs created with Figma.'
         skills={['React']}
-      />
-      <ProjectCard
-        title='Mis Tesoros APP'
-        img={misTesorosAppImg}
-        description='Mobile application that allows adding and obtaining persistent products between devices. The main objective of this project is to manage the difference in rates between US dollars and Venezuelan bolivars, converting base prices in dollars to bolivars, depending on the valuation of the day.'
-        skills={['React', 'Expo', 'Node.js', 'Express.js', 'MySQL']}
-        repository='https://github.com/MrVega01/mis-tesoros-app'
       />
       <ProjectCard
         title='Password generator for Hacktoberfest 2022 event'

@@ -11,6 +11,9 @@ export default function ProjectCard ({
   repository,
   website
 }) {
+  const descriptionParagraphs = Array.isArray(description)
+    ? description
+    : [description]
   return (
     <article className='projectCard'>
       <aside>
@@ -21,7 +24,11 @@ export default function ProjectCard ({
           <SkillHoverIconRow skills={skills} />
         </header>
         <h3>{title}</h3>
-        <p>{description}</p>
+        {
+          descriptionParagraphs.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))
+        }
         <footer>
           {repository && (
             <ButtonIcon
