@@ -1,5 +1,5 @@
 import './styles.css'
-import InfoBar from '../../components/InfoBar'
+import Timeline from '../../components/Timeline'
 import SkillsGroup from '../../components/SkillsGroup'
 import { CurvedSeparator, WavesSeparator } from '../../components/Separators/Separators'
 import ProjectList from '../../components/ProjectList'
@@ -34,7 +34,7 @@ export default function Home () {
 
         <section className='sectionExperience' id='experience'>
           <h2>Where I've work?</h2>
-          <InfoBar
+          <Timeline
             data={[
               {
                 company: 'Nrby',
