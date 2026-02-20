@@ -33,7 +33,7 @@ export default function Home () {
         </section>
 
         <section className='sectionExperience' id='experience'>
-          <h2>Where I've work?</h2>
+          <h2>Where I've worked?</h2>
           <Timeline
             data={[
               {
